@@ -6,6 +6,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('buah',buah, name='buah'),
     path('beli',beli, name='beli'),
-    path('total',total, name='total'),
-
+    path('total',total, name='total')
 ]
