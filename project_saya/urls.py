@@ -4,5 +4,5 @@ from toko.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('fashion',fashion, name='fashion')
+    path('buah',buah, name='buah')
 ]
