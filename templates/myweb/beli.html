@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Buah</title>
+    <style>
+        /* Styling (sesuaikan sesuai kebutuhan) */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        section {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .buah {
+            width: 300px;
+            margin: 20px;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .buah img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Toko Buah</h1>
+    </header>
+
+    <section>
+        <div class="buah">
+            <img src="apel.jpg" alt="Apel">
+            <h2>Apel</h2>
+            <p>Harga: Rp 10.000/kg</p>
+            <!-- Formulir untuk beli -->
+            <form>
+                <label for="quantity">Jumlah (kg):</label>
+                <input type="number" id="quantity" name="quantity" min="1" value="1">
+                <button type="button" onclick="beli('Apel', 10.000)">Beli</button>
+            </form>
+        </div>
+
+        <div class="buah">
+            <img src="jeruk.jpg" alt="Jeruk">
+            <h2>Jeruk</h2>
+            <p>Harga: Rp 8.000/kg</p>
+            <!-- Formulir untuk beli -->
+            <form>
+                <label for="quantity_jeruk">Jumlah (kg):</label>
+                <input type="number" id="quantity_jeruk" name="quantity_jeruk" min="1" value="1">
+                <button type="button" onclick="beli('Jeruk', 8000)">Beli</button>
+            </form>
+        </div>
+
+        <div class="buah">
+            <img src="semangka.jpg" alt="Jeruk">
+            <h2>semangka</h2>
+            <p>Harga: Rp 13.000/kg</p>
+            <!-- Formulir untuk beli -->
+            <form>
+                <label for="quantity_semangka">Jumlah (kg):</label>
+                <input type="number" id="quantity_semangka" name="quantity_semangka" min="1" value="1">
+                <button type="button" onclick="beli('semangka', 13.000)">Beli</button>
+            </form>
+        </div>
+
+    </section>
+
+    <script>
+        // Fungsi untuk menangani pembelian
+        function beli(namaBuah, hargaPerKg) {
+            var jumlah = document.getElementById('quantity').value;
+            var totalHarga = jumlah * hargaPerKg;
+            alert('Anda telah membeli ' + jumlah + ' kg ' + namaBuah + '. Total harga: Rp ' + totalHarga);
+        }
+    </script>
+
+</body>
+</html>

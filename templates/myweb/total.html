@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Toko Buah</title>
     <style>
+        /* Styling (sesuaikan sesuai kebutuhan) */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -52,22 +53,40 @@
         <div class="buah">
             <img src="apel.jpg" alt="Apel">
             <h2>Apel</h2>
-            <button>lihat harga</button>
+            <p>Harga: Rp 10.000/kg</p>
+            
+            <form>
+                <label for="quantity_apel">Jumlah (kg):</label>
+                <input type="number" id="quantity_apel" name="quantity_apel" min="1" value="1">
+                <button type="button" onclick="klik('Apel', 10000)">klik</button>
+            </form>
         </div>
 
         <div class="buah">
-            <img src="jeruk.png" alt="Jeruk">
+            <img src="jeruk.jpg" alt="Jeruk">
             <h2>Jeruk</h2>
-            <button>lihat harga</button>
+            <p>Harga: Rp 8.000/kg</p>
+            
+            <form>
+                <label for="quantity_jeruk">Jumlah (kg):</label>
+                <input type="number" id="quantity_jeruk" name="quantity_jeruk" min="1" value="1">
+                <button type="button" onclick="klik('Jeruk', 8000)">klik</button>
+            </form>
         </div>
 
         <div class="buah">
-         <img src="semangka.jpg" alt="semangka">
-         <h2>semangka</h2>
-         <button>lihat harga</button>
-     </div>
+            <img src="semangka.jpg" alt="Semangka">
+            <h2>Semangka</h2>
+            <p>Harga: Rp 13.000/kg</p>
+            
+            <form>
+                <label for="quantity_semangka">Jumlah (kg):</label>
+                <input type="number" id="quantity_semangka" name="quantity_semangka" min="1" value="1">
+                <button type="button" onclick="klik('Semangka', 13000)">klik</button>
+            </form>
+        </div>
+
 
     </section>
-
 </body>
 </html>
