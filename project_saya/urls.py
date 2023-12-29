@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.urls import path
-from web.views import *
+from toko.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
