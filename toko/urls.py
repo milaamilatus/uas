@@ -3,6 +3,5 @@ from.import views
 
 urlpatterns = [
     path('', views.buah, name='buah.html'),
-    path('', views.beli, name='beli.html'),
-    path('', views.total, name='total.html')
+    path('', views.beli, name='beli.html')
 ]

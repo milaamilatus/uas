@@ -7,8 +7,5 @@ def buah(request):
 def beli(request):
     return render(request, 'myweb/beli.html')
 
-def total(request):
-    return render(request, 'myweb/total.html')
-
 
 
